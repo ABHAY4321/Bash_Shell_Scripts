@@ -1,0 +1,18 @@
+[root@rhel9-server scripts]# date
+Sun Dec 18 21:23:45 IST 2022
+[root@rhel9-server scripts]# echo $?  # It checks last command was executed successfully or not. "0" means successful & any other no. means failed.
+0                                     # Exit status
+[root@rhel9-server scripts]# pwds
+bash: pwds: command not found...
+Similar command is: 'pwd' 
+[root@rhel9-server scripts]# echo $?
+127                                   # Exit status
+
+[root@rhel9-server scripts]# a=4
+[root@rhel9-server scripts]# test $a -eq 4  # Check if variable a value equals 4.
+[root@rhel9-server scripts]# echo $?        # Check command execution success or failure.
+0                                       # Exit status
+[root@rhel9-server scripts]# test $a -eq 5
+[root@rhel9-server scripts]# echo $?
+1                                       # Exit status
+

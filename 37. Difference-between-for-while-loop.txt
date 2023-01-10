@@ -1,0 +1,2 @@
+for loop reads each words in a line one by one.
+while loop reads line by line.

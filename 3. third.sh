@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Owner: Abhay Singh
+echo -e "\033[0;32m I Love my India" # A Script Line.
+
+echo -e "\033[0;31m #####Script Starting#####
+This is Abhay Singh
+#######################" # Another Script Line
+
+echo -e "\033[0;37m"
+
+echo "This \
+is \
+my \
+motherland"
+
+echo -e "This is my \t new role in \t this company"
+echo -e "This is my \v new role in \v this company"
+echo -e "This is my \n new role in \n this company"
