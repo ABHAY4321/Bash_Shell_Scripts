@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Note: os_type is not a system defined variable like UID. So we have to define os_type only, not UID.
+
 # os_type == Linux && user == root 
 # uname             To check os type.
 os_type="Linux"
