@@ -19,11 +19,18 @@ echo 'I am Mr. ${x} and i love watching ${y}'
 
 echo "${x}${y}"
 
-1="India"
+_name="Abhay"  # Valid variable.
+echo "Hello ${_name}"
 
-echo "${1}"
+1="India"    # Invalid variable.
+echo "${1}"  # ${number} is command line arg.
 
-*cunt="sing"
+my-name="Abhay" # Invaild variable.
+echo ${my-name}
 
-echo "${c*unt}"
+my name="Abhay"  # Invalid variable.
+echo ${my name}
+
+*cunt="sing"   # Invaild variable.
+echo "${*cunt}"
 
