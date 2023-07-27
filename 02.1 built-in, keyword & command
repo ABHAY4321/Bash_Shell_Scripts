@@ -1,0 +1,9 @@
+#!/bin/bash
+type -a uptime    # uptime is /usr/bin/uptime => It is command as it is a binary.
+type -a hostname  # hostname is /usr/bin/hostname => It is command as it is a binary.
+type -a echo      # echo is a shell builtin.
+type -a pwd       # pwd is a shell builtin.
+type -a if        # if is a shell keyword.
+echo $PATH        # /home/abhay/.local/bin:/home/abhay/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+# When typing anything in linux, initially it will look into its built in & execute it immediately if it is found. If not found in builtin, then it looks in path variable & execute it if it is found in it.
+# Shell builtin is faster than commands or keywords.
