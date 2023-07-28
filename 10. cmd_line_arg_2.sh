@@ -11,7 +11,7 @@ echo ${6}
 echo ${7}
 echo ${8}
 echo ${9}
-echo ${10}
+echo ${10}    # If we don't put curley bracket, then it will consider it $1 & concatanate 0 here. Ex-> ${1}=1, then here it will be 10 irrespective of cmd line arg passed here.
 echo ${11}
 echo ${12}
 echo ${13}
