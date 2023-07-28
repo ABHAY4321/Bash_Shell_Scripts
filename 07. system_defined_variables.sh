@@ -4,6 +4,8 @@
 
 # Purpose : System Defined Varibales Lab
 
+# env => See list of environment variables in current logged in user.
+
 echo ${SHELL}
 
 echo ${HOME}
@@ -25,3 +27,5 @@ echo ${UID}
 #echo ${UID}
 sleep 1
 echo ${SECONDS}
+
+# man bash  => To see list of available shell variables.
