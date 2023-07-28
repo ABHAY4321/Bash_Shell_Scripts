@@ -16,7 +16,7 @@ echo ${11}
 echo ${12}
 echo ${13}
 
-echo "my name is ${name} & my age is ${age}." 
+echo "my name is ${name} & my age is ${age}." # If we put cmd line arg for name as Abhay Singh, then it will consider Abhay for "name" & Singh for "age". So write cmd line arg inside "". 
 echo $#
 echo $@
 echo $*
