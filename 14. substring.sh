@@ -11,7 +11,7 @@ echo "${string:3:3}"    # Will present sring starting from fourth character & wi
 
 echo "${string:-1}"     # Represent string as it is.
 echo "${string: -1}"    # Print last character of that string.
-echo "${string: -5}"    # Print fifth character from last of that string.
+echo "${string: -5}"    # Print last five character from last of that string.
 
 echo "${string#a*c}"    # From starting, shortest match. Look for shortest match (From "a" to "c") & remove mentioned characters along with the character coming between them.
 echo "${string##a*c}"   # From starting, longest match. Look for longest match (From "a" to "c") & remove mentioned characters along with the character coming between them.
