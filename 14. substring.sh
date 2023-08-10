@@ -23,4 +23,4 @@ echo "${string/ab/nirb}"    # It will replace "ab" with "nirb" at first occuranc
 echo "${string//ab/nirb}"   # It will replace "ab" with "nirb" at all occurance.
 
 echo "${string/ab}"     # It will remove "ab" at first occurance.
-echo "${string//ab}"     # It will remove "ab" at first occurance.
+echo "${string//ab}"     # It will remove "ab" at all occurance.
