@@ -2,7 +2,7 @@
 
 read -p "Please enter your name: " name
 
-name=${name:-World} # Default value if no input given.
+name=${name:-World} # Default value if no input given (Unset Variable).
 
 echo "Hello ${name^}"
 
