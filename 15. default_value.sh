@@ -10,5 +10,8 @@ yourname=${unsetvariable-Singh}     # If variable is unsetvariable, the "-" will
 echo "${yourname}"
 
 myname=""
+mytestname=${myname-Pinku}          # If variable value is an empty string, the "-" will give no output (Blank space. It is resolved by below method.
+
+myname=""
 mytestname=${myname:-Pinku}         # If variable is unset (See first example of Hello World i.e no value passed to it) or its value is an empty string, the ":-" will set variable default value.
 echo "${mytestname}"
