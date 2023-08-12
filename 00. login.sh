@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash      # This line is "Shebang" or "bang" line. It is absolute path of bash interpreter.
 echo "###############################################################"
 echo -e "\033[0;31m"
 echo "Hostname: $(hostname)"
