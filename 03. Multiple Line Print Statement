@@ -17,3 +17,4 @@ motherland"
 echo -e "This is my \t new role in \t this company"
 echo -e "This is my \v new role in \v this company"
 echo -e "This is my \n new role in \n this company"
+# These are special escaping character.
