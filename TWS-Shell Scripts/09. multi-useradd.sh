@@ -9,7 +9,7 @@ for (( i=1; i<=$num_users; i++ ))
 do
     # Prompt the user for the username and password
     read -p "Enter username for user $i: " username
-    read -p "Enter password for user $i: " password
+    read -p "Enter password for user $i: " -s password
 
     # Create the user account
     sudo useradd -m $username
@@ -17,5 +17,5 @@ do
     # Set the password for the user account
     echo "$username:$password" | sudo chpasswd
 
-    echo "User account $username created successfully!"
+    echo -e "\nUser account $username created successfully!"
 done
