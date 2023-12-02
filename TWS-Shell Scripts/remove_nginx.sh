@@ -7,4 +7,5 @@ sudo apt remove nginx-common -y
 
 sudo apt autoremove -y
 
-sudo rm /var/www/html/index.html
+# sudo rm /var/www/html/index.html
+sudo rm -rf /var/www/html/
