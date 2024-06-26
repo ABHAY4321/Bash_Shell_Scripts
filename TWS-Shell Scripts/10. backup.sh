@@ -15,3 +15,5 @@ tar -cvzf $tgt/$filename $src
 echo "Backup Completed for $filename........."
 
 # watch -n2 ls -ltr ~/zordaar/backups          # Used to watch this command o/p every 2 seconds.
+# crontab -e
+# * * * * * sh /home/abhay/mazedaar/devops/scripts/backup.sh
