@@ -9,4 +9,9 @@ read channel
 
 echo "Please subscribe to my channel ${channel}"
 
+## OR
+read -p "What is your channel name: " channel
+
+echo "Please subscribe my channel ${channel}"
+
 
