@@ -35,4 +35,5 @@ echo "<h1>Enjoy the Tuesday Morning!!!</h1>" > index.html
 ## Move this web page to desired destination
 
 # sudo mv index.html /var/www/html
-
+## To remove nginx completely in ubuntu-
+# sudo apt-get remove nginx nginx-common -y
