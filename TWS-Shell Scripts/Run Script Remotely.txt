@@ -1,0 +1,6 @@
+ssh -i /home/abhay/.ssh/jenkins-key abhay@192.168.126.143 'bash  < /home/abhay/third-revision/shell-scripts/backup.sh'
+
+# jenkins-key -> Local machine's private key. Public key should be on the remote machine.
+# abhay -> A remote user.
+# 192.168.126.143 -> Remote machine IP.
+# /home/abhay/third-revision/shell-scripts/backup.sh -> Location of script file.
