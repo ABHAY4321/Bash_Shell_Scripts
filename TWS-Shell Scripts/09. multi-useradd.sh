@@ -17,5 +17,8 @@ do
     # Set the password for the user account
     echo "$username:$password" | sudo chpasswd
 
+    # Set '/bin/bash' as default login shell
+    sudo usermod -s /bin/bash ${username}
+
     echo -e "\nUser account $username created successfully!"
 done
