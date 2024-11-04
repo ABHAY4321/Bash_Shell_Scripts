@@ -22,3 +22,11 @@ sudo apt-get install ${1} -y
 echo "#################################"
 echo "Package ${1} has been installed successfully!"
 echo "#################################"
+=============================================================================
+#!/bin/bash
+
+echo "Total no. of packages to be installed: $#"
+echo "The packages to be installed: $@"
+sudo apt install $@ -y
+echo "Successfully installed packages: $@"
+============================================================================
