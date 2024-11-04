@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fun Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+            transition: background-color 0.5s;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #quote {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Fun Page</h1>
+
+    <div>
+        <input type="color" id="colorPicker" />
+        <button id="changeColor">Change Background Color</button>
+    </div>
+
+    <div>
+        <button id="newQuote">Get Random Quote</button>
+        <p id="quote"></p>
+    </div>
+
+    <script>
+        const quotes = [
+            "The best way to predict the future is to create it.",
+            "You miss 100% of the shots you don’t take.",
+            "Life is 10% what happens to us and 90% how we react to it.",
+            "The only limit to our realization of tomorrow will be our doubts of today.",
+            "Do what you can, with what you have, where you are."
+        ];
+
+        document.getElementById("changeColor").addEventListener("click", function() {
+            const selectedColor = document.getElementById("colorPicker").value;
+            document.body.style.backgroundColor = selectedColor;
+        });
+
+        document.getElementById("newQuote").addEventListener("click", function() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").innerText = quotes[randomIndex];
+        });
+    </script>
+</body>
+</html>
