@@ -25,3 +25,11 @@ sudo apt-get remove ${1} -y && sudo apt autoremove -y
 echo "#################################"
 echo "Package ${1} has been removed successfully!"
 echo "#################################"
+======================================================================================
+#!/bin/bash
+
+echo "Total no. of packages to be removed: $#"
+echo "The packages to be removed: $@"
+sudo apt remove $@ -y && sudo apt autoremove -y
+echo "Successfully removed packages: $@"
+=======================================================================================
